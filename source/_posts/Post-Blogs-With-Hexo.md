@@ -1,7 +1,7 @@
 ---
-title: Hexo 文章发布
+title: 使用Hexo发布博客
 top: true
-cover: false
+cover: true
 toc: true
 mathjax: false
 date: 2020-11-22 13:50:54
@@ -13,11 +13,6 @@ tags:
 categories:
 - 博客维护
 ---
-
-- [博客搭建](#博客搭建)
-- [写文章](#写文章)
-- [发布文章](#发布文章)
-- [备份博客](#备份博客)
 
 ## 博客搭建
 
