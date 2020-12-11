@@ -1,18 +1,20 @@
 ---
-title: 使用Hexo发布博客
-top: true
-cover: true
+title: Post Blogs With Hexo
+top: false
+cover: false
 toc: true
-mathjax: false
+mathjax: true
 date: 2020-11-22 13:50:54
 password:
-summary: My first blog
+summary: 使用Hexo发布博客
 tags:
 - 教程
 - 博客
 categories:
 - 博客维护
 ---
+
+<div align="middle"><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=858520&auto=1&height=66"></iframe></div>
 
 ## 博客搭建
 
