@@ -1,7 +1,7 @@
 ---
 title: Longest Monotone Subsequence
 top: true
-cover: true
+cover: false
 toc: true
 mathjax: true
 date: 2020-11-27 15:00:24

@@ -1,7 +1,7 @@
 ---
 title: Prefix Sum and Finite Difference
 top: true
-cover: true
+cover: false
 toc: true
 mathjax: true
 date: 2020-12-08 23:25:38

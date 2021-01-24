@@ -1,7 +1,7 @@
 ---
 title: ACM Freshmen Mistake Collection
-top: true
-cover: true
+top: false
+cover: false
 toc: true
 mathjax: true
 date: 2020-11-27 15:30:37
