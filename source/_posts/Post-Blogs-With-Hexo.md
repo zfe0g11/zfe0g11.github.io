@@ -16,9 +16,33 @@ categories:
 
 <div align="middle"><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=858520&auto=1&height=66"></iframe></div>
 
-## 博客搭建
+## 参考
 
 [超详细Hexo+Github博客搭建小白教程](https://zhuanlan.zhihu.com/p/35668237)
+
+## 快速搭建
+
+```bash
+# clone我的分支
+git clone https://github.com/alexander7xu/alexander7xu.github.io -b raw ./hexo
+cd hexo
+
+# 运行python脚本，填写信息
+python ./runme.py
+
+# 启动本地服务器，在`localhost:4000`预览效果
+hexo clean && hexo g && hexo s
+
+# 一切正常，修改对应位置为你的github用户名，再push到你的GitHub
+rm ./_config.yml.src ./themes/matery/_config.yml.src ./themes/matery/layout/_partial/footer.ejs.src
+git add *
+git commit -m "From alexander7xu"
+git branch -D raw
+git branch -m hexo
+git remote remove origin
+git remote add origin https://github.com/你的github用户名
+git push origin hexo:hexo
+```
 
 ## 写文章
 
