@@ -22,6 +22,8 @@ categories:
 
 ## 快速搭建
 
+先[安装node.js](https://nodejs.org/en/)
+
 ```bash
 # clone我的分支
 git clone https://github.com/alexander7xu/alexander7xu.github.io -b raw ./hexo
@@ -30,7 +32,9 @@ cd hexo
 # 运行python脚本，填写信息
 python ./runme.py
 
-# 启动本地服务器，在`localhost:4000`预览效果
+# 安装hexo及组件；启动本地服务器，在`localhost:4000`预览效果
+npm i hexo-cli -g
+npm install
 hexo clean && hexo g && hexo s
 
 # 一切正常，修改对应位置为你的github用户名，再push到你的GitHub
