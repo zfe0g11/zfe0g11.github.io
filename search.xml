@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Post Blogs With Hexo</title>
+      <link href="/post-blogs-with-hexo/"/>
+      <url>/post-blogs-with-hexo/</url>
+      
+        <content type="html"><![CDATA[<div align="middle"><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=858520&auto=1&height=66"></iframe></div><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://zhuanlan.zhihu.com/p/35668237" target="_blank" rel="noopener">超详细Hexo+Github博客搭建小白教程</a></p><h2 id="快速搭建"><a href="#快速搭建" class="headerlink" title="快速搭建"></a>快速搭建</h2><p>先<a href="https://nodejs.org/en/" target="_blank" rel="noopener">安装node.js</a></p><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># clone我的分支</span><span class="token function">git</span> clone https://github.com/alexander7xu/alexander7xu.github.io -b raw ./hexo<span class="token function">cd</span> hexo<span class="token comment" spellcheck="true"># 运行python脚本，填写信息</span>python ./runme.py<span class="token comment" spellcheck="true"># 安装hexo及组件；启动本地服务器，在`localhost:4000`预览效果</span><span class="token function">npm</span> i hexo-cli -g<span class="token function">npm</span> <span class="token function">install</span>hexo clean <span class="token operator">&amp;&amp;</span> hexo g <span class="token operator">&amp;&amp;</span> hexo s<span class="token comment" spellcheck="true"># 一切正常，修改对应位置为你的github用户名，再push到你的GitHub</span><span class="token function">rm</span> ./_config.yml.src ./themes/matery/_config.yml.src ./themes/matery/layout/_partial/footer.ejs.src<span class="token function">git</span> add *<span class="token function">git</span> commit -m <span class="token string">"From alexander7xu"</span><span class="token function">git</span> branch -D raw<span class="token function">git</span> branch -m hexo<span class="token function">git</span> remote remove origin<span class="token function">git</span> remote add origin https://github.com/你的github用户名<span class="token function">git</span> push origin hexo:hexo<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="写文章"><a href="#写文章" class="headerlink" title="写文章"></a>写文章</h2><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">cd</span> <span class="token variable">$blog_root</span>hexo new post <span class="token string">"post title"</span><span class="token function">ls</span> source\_posts<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>生成了<code>post-title</code>文件夹存放资源文件；<code>post-title.md</code>文件存放文章。</p><h2 id="发布文章"><a href="#发布文章" class="headerlink" title="发布文章"></a>发布文章</h2><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">cd</span> <span class="token variable">$blog_root</span>hexo clean <span class="token operator">&amp;&amp;</span> hexo g <span class="token operator">&amp;&amp;</span> hexo s<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>在<code>localhost:4000</code>预览效果</p><pre class="line-numbers language-bash"><code class="language-bash">hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>上传到GitHub</p><h2 id="备份博客"><a href="#备份博客" class="headerlink" title="备份博客"></a>备份博客</h2><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">cd</span> <span class="token variable">$blog_root</span><span class="token function">git</span> add <span class="token keyword">.</span><span class="token function">git</span> commit -m <span class="token string">"message here"</span><span class="token function">git</span> push origin hexo<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 博客维护 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+            <tag> 博客 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
