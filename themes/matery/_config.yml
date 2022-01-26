@@ -49,16 +49,16 @@ indexbtn:
   enable: true
   name: Github
   icon: fa-github-alt
-  url: https://github.com/{username}
+  url: https://github.com/zfe0g11
 
 # The configurations of the second line of home banner
 # icon/button will not show up if you leave the corresponding socialLink empty
 # 首页 banner 中的第二行个人信息配置，留空即不启用
 socialLink:
 #  qq: 792321264
-  github: {username}
+  github: zfe0g11
 #  weibo: godweiyang
-  email: {email}
+  email: zfe0g11@gmail.com
 #  zhihu: godweiyang
 
 # Whether to activate the Post TOC, and Configure which title types are supported by TOC support.
@@ -200,7 +200,7 @@ postCalendar: true
 # ！和indexbtn冲突！
 githubLink:
   enable: false
-  url: https://github.com/{username}
+  url: https://github.com/zfe0g11
   title: Follow Me
 
 # The password verification feature of read post. To use this feature,
